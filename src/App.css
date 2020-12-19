@@ -38,9 +38,7 @@
         width: 950px;
         background-attachment: fixed;
         background-position: center;
-        /*position: absolute;*/
-        /*overflow: auto;*/
-    }
+           }
 }
 
 @media (max-width: 850px) {
@@ -50,9 +48,7 @@
         width: 850px;
         background-attachment: fixed;
         background-position: center;
-        /*position: absolute;*/
-        /*overflow: auto;*/
-    }
+          }
 }
 
 
@@ -63,9 +59,7 @@
         width: 850px;
         background-attachment: fixed;
         background-position: center;
-        /*position: absolute;*/
-        /*overflow: auto;*/
-    }
+        }
 }
 
 @media (max-width: 650px) {
@@ -75,9 +69,7 @@
         width: 850px;
         background-attachment: fixed;
         background-position: center;
-        /*position: absolute;*/
-        /*overflow: auto;*/
-    }
+       }
 }
 
 @media (max-width: 550px) {
@@ -87,9 +79,7 @@
         width: 650px;
         background-attachment: fixed;
         background-position: center;
-        /*position: absolute;*/
-        /*overflow: auto;*/
-    }
+         }
 }
 
 @media (max-width: 450px) {
@@ -99,9 +89,7 @@
         width: 550px;
         background-attachment: fixed;
         background-position: center;
-        /*position: absolute;*/
-        /*overflow: auto;*/
-    }
+          }
 }
 
 @media (max-width: 350px) {
@@ -111,9 +99,7 @@
         width: 550px;
         background-attachment: fixed;
         background-position: right;
-        /*position: absolute;*/
-        /*overflow: auto;*/
-    }
+         }
 }
 
 @media (max-width: 250px) {
@@ -123,7 +109,5 @@
         width: 550px;
         background-attachment: fixed;
         background-position: left;
-        /*position: absolute;*/
-        /*overflow: auto;*/
-    }
+           }
 }
