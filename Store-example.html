@@ -1,0 +1,92 @@
+<script>
+
+    let man = {
+        name: 'Vitaliy',
+        age: 35,
+        sayName() {
+            alert(this.name)
+        }
+    }
+    //объект мэн, со свойствами имя и возраст и методом сказать имя
+    // слово this обращение к ВНУТРЕННИМ данным. Внутри объект не знает что он МЭН!!
+
+    console.log(man.age);
+    console.log(man.name);
+    man.sayName();
+
+    let page = {
+        title: 'Rock',
+        content: '',
+        render() {
+            //document.write - добавлем текст
+            document.write(this.title)
+            document.write(this.content)
+        }
+    }
+
+    //запоняем контент
+    page.content = '<div>Content about IT</div>';
+    //рендерим страницу
+    page.render();
+
+    let page2 = {
+        title: 'Rock',
+
+        //нижнее подчеркивание говорит что это приватное свойство или объект
+        _content: '',
+
+        //set это метод который устанавливает значение свойству
+        setContent(value) {
+            this._content = value;
+        },
+
+        //get это метод который возвращает
+        getContent() {
+            return this._content;
+        },
+        render: function () {
+            document.write(this._content)
+        }
+    }
+
+    page2.setContent('<div>Content about IT</div>');
+    console.log (page2.getContent());
+    page2.render();
+
+
+    let store = {
+        _subscriber() {
+           console.log('no subscribers (observers)')
+        },
+        _state: {
+            firstName: 'Vitaliy',
+            lastName: 'Shiryaev'
+        },
+        getState () {
+            return this._state;
+        },
+        subscribe(observers) {
+            this._subscriber = observer;
+        },
+        setFirstName(value) {
+            this._state.firstName = value;
+            this._subscriber();
+        }
+    }
+//интрефейс и логика
+    //сторе (главный управленец) дай мне стейт
+    let state = store.getState();
+    //сторе хочу добавить ферстимя
+    store.setFirstName('JS');
+    //стор стейт изменился дай мне новый стэйт
+    state = store.getState();
+
+    //стор мы хотим подписаться
+    store.subscribe( () =>{
+        let state = store.getState();
+        renderPage (state);
+    });
+
+    store.setFirstName('IT');
+
+</script>

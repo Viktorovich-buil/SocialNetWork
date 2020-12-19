@@ -1,0 +1,23 @@
+.item a {
+    text-decoration: none;
+    color: white;
+}
+
+.item a:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.item a.active {
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.imgavatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 10px;
+}

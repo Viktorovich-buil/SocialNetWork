@@ -1,0 +1,139 @@
+.content {
+    grid-area: c;
+    border-radius: 10px;
+    box-shadow: 0 0 15px -5px black;
+    margin-bottom: 10px;
+}
+
+.topImageblock {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.topImage {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.topImage:hover {
+    transform: scale(1.3);
+}
+
+.profiletext {
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.editlink {
+    width: 40px;
+    box-shadow: 0 0 10px -1px #2d5f5d;
+    border-radius: 40%;
+    cursor: pointer;
+    float: right;
+}
+
+.editlinkblock {
+    text-align: right;
+    padding-top: -20em;
+}
+
+.fullName {
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.status {
+    border-radius: 5px;
+    width: 30%;
+}
+
+.aboutMe {
+    margin-top: 10px;
+    padding: 5px;
+    box-shadow: 0 0 15px -5px black;
+    border-radius: 5px;
+}
+
+.job {
+    padding-top: 7px;
+}
+
+.input {
+    background-color: #2d5f5d;
+    outline: none;
+    border: none;
+}
+
+.status:hover {
+    background-color: #2d5f5d;
+    cursor: pointer;
+}
+
+
+.file {
+    height: 125px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 0 0 20px -3px black;
+    border-radius: 50%;
+    margin-left: 20%;
+    position: absolute;
+    top: 6em;
+    left: -7em;
+    opacity: 0;
+}
+
+
+.mainlinks_wrapper {
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.firstlinks_wrapper {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.secondlinks_wrapper {
+    margin: 10px 0 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links_wrapper + .links_wrapper {
+    margin-left: 20px;
+}
+
+.links_wrapper {
+    width: 40px;
+}
+
+.links {
+    width: 40px;
+    box-shadow: 0 0 10px -1px #2d5f5d;
+    border-radius: 20%;
+}
+
+
+@media (max-width: 530px) {
+    .mainlinks_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondlinks_wrapper {
+        margin-left: 0;
+    }
+}
+
+
