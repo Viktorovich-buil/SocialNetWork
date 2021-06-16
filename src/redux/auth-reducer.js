@@ -7,10 +7,10 @@ const GET_CAPTCHA_URL_SUCCESS = 'network/auth/GET_CAPTCHA_URL_SUCCESS'
 
 
 let initialState = {
-    id: null,
-    email: null,
-    login: null,
-    isAuth: false,
+    id: 11656,
+    email: 'viktorovich85@inbox.ru',
+    login: 'Viktorovich',
+    isAuth: true,
     captchaUrl: null
 };
 
