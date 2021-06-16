@@ -9,24 +9,24 @@ import Preloader from "../Common/Preloader/Preloader";
 
 
 class SignInContainer extends React.Component {
-    catchAllUnhandledErrors = (reason, promise) => {
-        alert('Alarm!!! some error occured :(');
-    }
-
-    componentDidMount() {
-        this.props.initializeApp();
-        window.addEventListener('unhandledrejection', this.catchAllUnhandledErrors)
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors)
-
-    }
+    // catchAllUnhandledErrors = (reason, promise) => {
+    //     alert('Alarm!!! some error occured :(');
+    // }
+    //
+    // componentDidMount() {
+    //     this.props.initializeApp();
+    //     window.addEventListener('unhandledrejection', this.catchAllUnhandledErrors)
+    // }
+    //
+    // componentWillUnmount() {
+    //     window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors)
+    //
+    // }
 
     render() {
-        if (!this.props.initialized) {
-            return <Preloader />
-        }
+        // if (!this.props.initialized) {
+        //     return <Preloader />
+        // }
         return (<div>
             {this.props.isAuth
                 ? <Content {...this.props} />
