@@ -1,0 +1,60 @@
+.error {
+    display: flex;
+    justify-content: space-between;
+    grid-area: c;
+    padding: 15px;
+    box-shadow: 0 0 15px -5px black;
+    border-radius: 10px;
+}
+
+.errortext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25%;
+    padding-left: 10%;
+}
+
+.text404 {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.text {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.link {
+    padding-top: 20px;
+}
+
+.link a {
+    font-weight: bolder;
+
+    text-decoration: none;
+    color: #000405;
+}
+
+.link a:hover {
+    color: white;
+}
+
+.image {
+    float: right;
+    width: 150px;
+    height: 250px;
+}
+
+
+
+/*@media (max-width: 950px) {*/
+/*    .img {*/
+/*        width: 250px;*/
+/*        height: 250px;*/
+/*        }*/
+/*}*/
+
+
+
+

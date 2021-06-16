@@ -1,0 +1,37 @@
+.messageleft {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.messageright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.message {
+    max-width: 350px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+}
+
+.messageright .message {
+    background: white;
+    color: #000405;
+    box-shadow: 0 0 15px -5px black;
+}
+
+.messageleft .message {
+    box-shadow: 0 0 15px -5px black;
+    background: #494B68;
+    color: white;
+}
+
+

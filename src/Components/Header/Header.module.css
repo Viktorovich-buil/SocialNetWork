@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+.header {
+    grid-area: h;
+    margin: 0;
+    padding: 0;
+    background-color: #022140;
+    font-family: 'Open Sans Condensed', sans-serif;
+    height: 56px;
+}
+
+.headerContent {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 10% 2fr 9fr 10%;
+    grid-column-gap: 10px;
+    grid-template-areas: "a t l b";
+}
+
+.headerText {
+    grid-area: a;
+    width: 40px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.langru {
+    grid-area: b;
+    display: inline-block;
+    line-height: 30px;
+    margin: 13px 0 10px -1px;
+    padding-left: 10px;
+}
+
+.langen {
+    grid-area: b;
+    display: inline-block;
+    line-height: 30px;
+    margin: 13px 0 10px -1px;
+    padding-left: 40px;
+}
+
+.langru a {
+    text-decoration: none;
+    color: white;
+}
+
+.langen a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.langen a.active {
+    color: #2d5f5d;
+    font-weight: bolder;
+    font-size: 120%;
+    letter-spacing: 1px;
+    border-style: solid;
+    border-color: #2d5f5d;
+    border-width: 1px;
+}
+
+.langru a.active {
+    color: #2d5f5d;
+    font-weight: bolder;
+    font-size: 120%;
+    letter-spacing: 1px;
+    border-style: solid;
+    border-color: #2d5f5d;
+    border-width: 1px;
+}
+
+.langru a:hover {
+    color: #2d5f5d;
+}
+
+.langen a:hover {
+    color: #2d5f5d;
+}
+
+.log {
+    grid-area: l;
+    text-align: right;
+}
+
+.log a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 120%;
+    box-shadow: 0 0 20px 2px whitesmoke;
+    padding: 1px;
+    min-width: 100px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    letter-spacing: 3px;
+}
+
+.log a:hover {
+    color: crimson;
+}
+
+.buttonlogout {
+    box-shadow: 2px 3px 26px -3px #899599;
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color: #ededed;
+    border-radius: 7px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 1px 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.textlogout {
+    font-weight: bolder;
+}
+
+.text {
+    font-size: smaller;
+    text-align: left;
+}
+
+.link {
+    grid-area: n;
+}
+
+

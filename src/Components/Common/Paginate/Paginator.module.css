@@ -1,0 +1,73 @@
+.paginator {
+    margin: 5px;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #1E4258;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    border-radius: 4px;
+    margin: 0 5px;
+    border: none;
+    box-shadow: 1px 0 10px 2px black;
+
+
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 0 10px 2px white;
+}
+
+.button:active {
+    color: black;
+    background-color: white;
+    border: none;
+}
+.button:focus {
+    outline: none;
+}
+
+.button:first-child {
+    border-radius: 40px 0 0 40px;
+    border: none;
+}
+
+
+.button:last-child {
+    border-radius: 0 40px 40px 0;
+    border: none;
+}
+
+.selectedPage {
+    font-weight: bolder;
+    box-shadow: 1px 0 10px 2px white;
+    color: black;
+    background-color: white;
+}
+
+.pageNumber {
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pageNumber:hover {
+    box-shadow: 1px 0 10px 2px white;
+    color: black;
+    background-color: white;
+}
+
+
+
+
+

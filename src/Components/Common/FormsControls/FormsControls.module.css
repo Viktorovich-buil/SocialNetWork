@@ -1,0 +1,64 @@
+.formControl.error input,
+.formControl.error textarea
+{
+    border: 2px #CB2D6F solid;
+    border-radius: 2px;
+}
+
+.formControl.error span
+{
+    font-size: 14px;
+    color: white;
+}
+
+.formSummeryError {
+    border: red 1px solid;
+    padding: 5px;
+    color: whitesmoke;
+
+}
+
+.inputs {
+    height: 25px;
+    width: 208px;
+    padding: 6px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.inputs:focus {
+    border: 1px solid darkblue;
+}
+
+.ProfileDataForm {
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #1E4258;
+}
+
+.button {
+    box-shadow: 2px 3px 26px -3px #899599;
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color:#ededed;
+    border-radius:7px;
+    display:inline-block;
+    cursor:pointer;
+    color:black;
+    border:1px solid #ffffff;
+    font-weight:bold;
+    font-size:15px;
+    padding:3px 45px;
+    text-decoration:none;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    background-color:#bab1ba;
+}
+
+.button:active {
+    position:relative;
+    top:1px;
+}
