@@ -3,11 +3,11 @@ import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import store from "./redux/redux-store";
 import SignInContainer from "./Components/Login/SignInContainer";
-import 'antd/dist/antd.css';
 
 
 
-const AppContainer : React.FC = (props) => {
+
+const AppContainer : React.FC = () => {
   return (
       <div>
         <SignInContainer />
@@ -15,7 +15,7 @@ const AppContainer : React.FC = (props) => {
   );
 }
 
-const SocialNetApp : React.FC = (props) => {
+const SocialNetApp : React.FC = () => {
   return <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
