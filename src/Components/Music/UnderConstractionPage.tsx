@@ -7,7 +7,7 @@ const UnderConstractionPage: React.FC = () => {
         <div className={classes.text}>
             THIS PAGE IS UNDER CONSTRUCTION
         </div>
-    </div>
+            </div>
 }
 
 export default UnderConstractionPage;

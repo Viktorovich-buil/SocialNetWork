@@ -21,7 +21,7 @@ type PropsType = {
     }
 type QueryParamsType = { term?: string, page?: string, friend?: string };
 
-export const Users: React.FC<PropsType> = (props) => {
+export const Users: React.FC<PropsType> = () => {
     //HOOK
     const users = useSelector(getUsers)
     const totalUsersCount = useSelector(getTotalUsersCount)
@@ -42,7 +42,7 @@ export const Users: React.FC<PropsType> = (props) => {
         let actualFilter = filter
         if (!!parsed.page) actualPage = Number(parsed.page)
         if (!!parsed.term) actualFilter = {...actualFilter, term: parsed.term as string}
-        if (!!parsed.friend) actualFilter = {...actualFilter, friend: parsed.friend === 'null' ? null : parsed.friend === 'true' ? true: false}
+        if (!!parsed.friend) actualFilter = {...actualFilter, friend: parsed.friend === 'null' ? null : parsed.friend === 'true'}
 
         dispatch(requestUsers(actualPage, pageSize, actualFilter));
     }, [])

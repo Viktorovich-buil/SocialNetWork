@@ -3,6 +3,7 @@ import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import store from "./redux/redux-store";
 import SignInContainer from "./Components/Login/SignInContainer";
+import 'antd/dist/antd.css';
 
 
 
