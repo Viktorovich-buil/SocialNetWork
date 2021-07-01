@@ -2,7 +2,7 @@ import React from "react";
 import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 import {compose} from "redux";
-import Login from "./Login";
+import {LoginPage} from "./LoginPage";
 import Content from "../../Content";
 import {initializeApp} from "../../redux/app-reducer";
 import Preloader from "../Common/Preloader/Preloader";
@@ -36,7 +36,7 @@ class SignInContainer extends React.Component<MapPropsType & DispatchPropsType> 
         return (<div>
             {this.props.isAuth
                 ? <Content {...this.props} />
-                : <Login />}
+                : <LoginPage />}
         </div>)
     }
 }
