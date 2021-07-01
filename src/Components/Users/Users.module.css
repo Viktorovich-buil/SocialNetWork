@@ -14,11 +14,28 @@
     box-shadow: 0 0 15px -5px black;
 }
 
+.paginator2 {
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 15px -5px black;
+}
+
+.searchform {
+    margin: 10px 13px 0px 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 15px -5px #6f6f4b;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .users {
     padding: 5px;
     border-radius: 10px;
-    margin: 10px;
-}
+    }
 
 .user {
     display: flex;
@@ -36,29 +53,30 @@
 
 .button {
     box-shadow: 2px 3px 26px -3px black;
-    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-    background-color:#ededed;
-    border-radius:20px;
-    display:inline-block;
-    cursor:pointer;
-    color:black;
-    border:1px solid #ffffff;
-    font-weight:bold;
-    font-size:14px;
-    padding:1px 10px;
-    text-decoration:none;
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color: #ededed;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1px 10px;
+    text-decoration: none;
     margin-bottom: 5px;
     margin-left: 10px;
     outline: none;
 }
 
 .button:hover {
-    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-    background-color:#bab1ba;
+    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    background-color: #bab1ba;
 }
+
 .button:active {
-    position:relative;
-    top:1px;
+    position: relative;
+    top: 1px;
 }
 
 .datauser {
