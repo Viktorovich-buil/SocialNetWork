@@ -1,4 +1,7 @@
 .body{
+    top: auto;
+    left: 45%;
+    position: absolute;
     grid-area: n;
     height: 75vh;
     display: flex;

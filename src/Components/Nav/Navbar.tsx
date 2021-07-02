@@ -19,8 +19,8 @@ type PropsType = {
 
 
 const Navbar: React.FC<PropsType> = ({
-                    profile,
-                    savePhoto,
+                    profile
+
                 }) => {
     if (!profile) {
         return (<NavbarEmpty/>)
@@ -39,8 +39,8 @@ const Navbar: React.FC<PropsType> = ({
                 <img className={classes.navlogo} src={messagelogo} alt='Messages'/>Messages</NavLink>
         </div>
         <div className={classes.item}>
-            <NavLink to='/news' activeClassName={classes.active}>
-                <img className={classes.navlogo} src={newslogo} alt='News'/>News</NavLink>
+            <NavLink to='/chat' activeClassName={classes.active}>
+                <img className={classes.navlogo} src={newslogo} alt='News'/>Chat</NavLink>
         </div>
         <div className={classes.item}>
             <NavLink to='/music' activeClassName={classes.active}>

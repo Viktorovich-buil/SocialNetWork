@@ -1,0 +1,80 @@
+.chat {
+    grid-area: c;
+    border-radius: 10px;
+    box-shadow: 0 0 50px -5px black;
+    padding: 5px;
+}
+
+.messages {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px -1px black;
+    padding: 5px 20px;
+}
+
+img {
+    border-radius: 50px;
+    order: 1;
+}
+
+.username {
+    font-weight: bolder;
+    padding: 10px;
+    order: 2;
+    width: 15%;
+}
+
+p {
+    padding-top: 13px;
+}
+
+.textmessage {
+    order: 3;
+    width: 85%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px -1px black;
+    padding: 5px 5px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.addmessage {
+    margin-top: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px -1px black;
+    border-radius: 5px;
+}
+
+textarea {
+    outline: none;
+    overflow: auto;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    resize: none;
+}
+
+
+.button {
+    margin: 10px;
+    box-shadow: 2px 3px 26px -3px black;
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1px 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+ }

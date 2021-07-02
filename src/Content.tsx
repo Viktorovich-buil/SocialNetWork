@@ -13,24 +13,26 @@ import {withSuspense} from "./Hoc/withSuspense";
 
 const DialogsContainer = React.lazy(() => import('./Components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('./Components/Profile/ProfileContainer'));
+const ChatPage = React.lazy(() => import ('./Components/pages/Chat/ChatPage'));
 
 const SuspendedProfile = withSuspense(ProfileContainer)
 const SuspendedDialogs = withSuspense(DialogsContainer)
-
+const SuspendedChatPage = withSuspense(ChatPage)
 
 
 const Content: React.FC = () => {
     return <div className='app-wrapper'>
         <HeaderContainer/>
         <NavContainer/>
+
         <div className='app-wrapper-content'>
             <Suspense fallback={<Preloader/>}>
                 <Switch>
-                    <Route path='/profile/:userId?' render={() => <SuspendedProfile />}/>
-                    <Route path='/dialogs' render={() => <SuspendedDialogs />}/>
-                    <Route path='/news' render={() => <UnderConstractionPage/>}/>
+                    <Route path='/profile/:userId?' render={() => <SuspendedProfile/>}/>
+                    <Route path='/dialogs' render={() => <SuspendedDialogs/>}/>
+                    <Route path='/chat' render={() => <SuspendedChatPage/>}/>
                     <Route path='/music' render={() => <UnderConstractionPage/>}/>
-                    <Route path='/users' render={() => <UsersPage />}/>
+                    <Route path='/users' render={() => <UsersPage/>}/>
                     <Route path='/settings' render={() => <UnderConstractionPage/>}/>
                     <Route path='/ru' render={() => <UnderConstractionPage/>}/>
                     <Route path='/en' render={() => <UnderConstractionPage/>}/>
