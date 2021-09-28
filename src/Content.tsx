@@ -9,6 +9,7 @@ import Error from "./Components/404/404";
 import UnderConstractionPage from "./Components/Music/UnderConstractionPage";
 import {UsersPage} from "./Components/Users/UsersContainer";
 import {withSuspense} from "./Hoc/withSuspense";
+import TestPage from "./Components/Music/TestPage";
 
 
 const DialogsContainer = React.lazy(() => import('./Components/Dialogs/DialogsContainer'));
@@ -33,7 +34,7 @@ const Content: React.FC = () => {
                     <Route path='/chat' render={() => <SuspendedChatPage/>}/>
                     <Route path='/music' render={() => <UnderConstractionPage/>}/>
                     <Route path='/users' render={() => <UsersPage/>}/>
-                    <Route path='/settings' render={() => <UnderConstractionPage/>}/>
+                    <Route path='/settings' render={() => <TestPage/>}/>
                     <Route path='/ru' render={() => <UnderConstractionPage/>}/>
                     <Route path='/en' render={() => <UnderConstractionPage/>}/>
                     <Route path='/log' render={() => <LoginPage/>}/>
