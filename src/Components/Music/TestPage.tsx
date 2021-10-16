@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import {login} from "../../redux/auth-reducer";
 
 //массив пар
 type UsersType = Array<[number, number]>

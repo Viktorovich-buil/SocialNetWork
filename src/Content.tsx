@@ -10,6 +10,7 @@ import UnderConstractionPage from "./Components/Music/UnderConstractionPage";
 import {UsersPage} from "./Components/Users/UsersContainer";
 import {withSuspense} from "./Hoc/withSuspense";
 import TestPage from "./Components/Music/TestPage";
+import TestPageGitHubUsers from "./Components/Music/TestPageGitHubUsers";
 
 
 const DialogsContainer = React.lazy(() => import('./Components/Dialogs/DialogsContainer'));
@@ -32,7 +33,7 @@ const Content: React.FC = () => {
                     <Route path='/profile/:userId?' render={() => <SuspendedProfile/>}/>
                     <Route path='/dialogs' render={() => <SuspendedDialogs/>}/>
                     <Route path='/chat' render={() => <SuspendedChatPage/>}/>
-                    <Route path='/music' render={() => <UnderConstractionPage/>}/>
+                    <Route path='/music' render={() => <TestPageGitHubUsers/>}/>
                     <Route path='/users' render={() => <UsersPage/>}/>
                     <Route path='/settings' render={() => <TestPage/>}/>
                     <Route path='/ru' render={() => <UnderConstractionPage/>}/>
